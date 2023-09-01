@@ -21,4 +21,7 @@
     "titleBar.inactiveForeground": "#15202b99"
   },
   "peacock.color": "#91f861",
+  "cSpell.words": [
+    "todos"
+  ],
 }

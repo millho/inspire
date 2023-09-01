@@ -1,9 +1,14 @@
+import { Todo } from './models/Todo.js'
 import { Value } from './models/Value.js'
 import { EventEmitter } from './utils/EventEmitter.js'
 import { isValidProp } from './utils/IsValidProp.js'
 import { loadState } from './utils/Store.js'
 
 class ObservableAppState extends EventEmitter {
+
+  /**@type {Todo[]} */
+  todo = []
+
   page = ''
   user = null
   /** @type {import('./models/Account.js').Account | null} */
