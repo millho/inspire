@@ -22,7 +22,13 @@ class TodoService {
         AppState.todo = AppState.todo.filter(todo => todo.id != todoId)
     }
 
-
+    async completeTodo(todoId) {
+        const todo = AppState.todo.find(todo => todo.id == todoId)
+        todo.completed = !todo.completed
+        const res = await api.put(`/api/todos/${todoId}`, todo)
+        AppState.emit('todo')
+        console.log(res.data)
+    }
 }
 
 export const todoService = new TodoService
