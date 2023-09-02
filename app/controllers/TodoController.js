@@ -58,7 +58,8 @@ export class TodoController {
         }
     }
 
-    todoCount() {
-        AppState.todo.length
-    }
+    // todoCount() {
+    //     let listLength = AppState.todo.length
+    //     return listLength
+    // }
 }

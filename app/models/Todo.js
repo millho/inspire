@@ -14,8 +14,8 @@ export class Todo {
         return /*HTML*/`
         <div class="d-flex justify-content-between my-3">
             ${this.isComplete}
-            <p class="m-1 w-100 justify-content-start my-auto">${this.description}</p>
-            <button class="m-1 btn" onclick="app.TodoController.deleteTodo('${this.id}')"><i class="mdi mdi-nuke"></i></button>
+            <p class="m-1 w-100 justify-content-start my-auto text-light">${this.description}</p>
+            <button class="m-1 btn text-light" onclick="app.TodoController.deleteTodo('${this.id}')"><i class="mdi mdi-delete"></i></button>
         </div>
         `
     }
