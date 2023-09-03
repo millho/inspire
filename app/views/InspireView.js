@@ -19,6 +19,8 @@ export const InspireView = /*HTML*/`
                 </div>
             </section>
         </div>
+        <div class="col-4" id="quote">
+        <div>
     </section>
 </div>
 `

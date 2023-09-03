@@ -1,4 +1,5 @@
 import { Image } from './models/Image.js'
+import { Quote } from './models/Quote.js'
 import { Todo } from './models/Todo.js'
 import { Value } from './models/Value.js'
 import { EventEmitter } from './utils/EventEmitter.js'
@@ -12,6 +13,9 @@ class ObservableAppState extends EventEmitter {
 
   /**@type {Image | null} */
   dailyImage = null
+
+  /**@type {Quote | null} */
+  dailyQuote = null
 
   page = ''
   user = null
