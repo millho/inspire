@@ -8,7 +8,6 @@ class ImageService {
         const res = await api.get('/api/images')
         AppState.dailyImage = new Image(res.data)
     }
-
 }
 
 export const imageService = new ImageService
