@@ -4,9 +4,10 @@ import { Pop } from "../utils/Pop.js"
 import { setHTML } from "../utils/Writer.js"
 
 function _drawWeather() {
-    debugger
     let dailyWeather = AppState.dailyWeather
-    setHTML('weather', dailyWeather.weatherTemplate)
+    // setHTML('weather', dailyWeather.weatherTemplate)
+    // document.getElementById('weather')
+    console.log(dailyWeather.weatherTemplate);
 }
 
 export class WeatherController {
@@ -17,6 +18,14 @@ export class WeatherController {
     async getWeather() {
         try {
             await weatherService.getWeather()
+        } catch (error) {
+            Pop.error(error)
+        }
+    }
+
+    async switchTemp() {
+        try {
+            await weatherService.switchTemp()
         } catch (error) {
             Pop.error(error)
         }

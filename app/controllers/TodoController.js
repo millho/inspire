@@ -10,6 +10,8 @@ function _drawTodo() {
     let content = ''
     todos.forEach(todo => content += todo.todoTemplate)
     setHTML('todo-list', content)
+    let todosLeft = Todo.todoCount()
+    setHTML('todos-left', todosLeft)
 }
 
 export class TodoController {
@@ -57,9 +59,4 @@ export class TodoController {
             Pop.error(error)
         }
     }
-
-    // todoCount() {
-    //     let listLength = AppState.todo.length
-    //     return listLength
-    // }
 }

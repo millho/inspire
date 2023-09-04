@@ -8,7 +8,6 @@ class QuoteService {
         const res = await api.get('/api/quotes')
         AppState.dailyQuote = new Quote(res.data)
     }
-
 }
 
 export const quoteService = new QuoteService

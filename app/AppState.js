@@ -21,6 +21,8 @@ class ObservableAppState extends EventEmitter {
   /**@type {Weather | null} */
   dailyWeather = null
 
+  time = null
+
   page = ''
   user = null
   /** @type {import('./models/Account.js').Account | null} */

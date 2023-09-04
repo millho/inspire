@@ -8,6 +8,10 @@ class WeatherService {
         const res = await api.get('/api/weather')
         AppState.dailyWeather = new Weather(res.data)
     }
+
+    switchTemp() {
+        console.log('switching temp');
+    }
 }
 
 export const weatherService = new WeatherService

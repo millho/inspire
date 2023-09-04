@@ -16,3 +16,11 @@ body {
     visibility: visible;
     opacity: 1;
 }
+
+.blurred {
+    backdrop-filter: blur(15px);
+    border: 2px snow;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: rgba(22, 19, 28, 0.59)
+}

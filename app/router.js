@@ -1,4 +1,5 @@
 import { AboutController } from "./controllers/AboutController.js";
+import { ClockController } from "./controllers/ClockController.js";
 import { HomeController } from "./controllers/HomeController.js";
 import { ImageController } from "./controllers/ImageController.js";
 import { QuoteController } from "./controllers/QuoteController.js";
@@ -15,7 +16,7 @@ import { InspireView } from "./views/InspireView.js";
 export const router = [
   {
     path: '',
-    controller: [TodoController, ImageController, QuoteController, WeatherController,],
+    controller: [TodoController, ImageController, QuoteController, WeatherController, ClockController],
     view: InspireView
   },
   {

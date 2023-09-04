@@ -31,4 +31,11 @@ export class Todo {
             `
         }
     }
+
+    static todoCount() {
+        let todos = AppState.todo.filter(todo => todo.completed == false)
+        return /*HTML*/ `
+        <h5>Todos: ${todos.length}</h5>
+        `
+    }
 }
