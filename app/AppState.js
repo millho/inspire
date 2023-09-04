@@ -2,6 +2,7 @@ import { Image } from './models/Image.js'
 import { Quote } from './models/Quote.js'
 import { Todo } from './models/Todo.js'
 import { Value } from './models/Value.js'
+import { Weather } from './models/Weather.js'
 import { EventEmitter } from './utils/EventEmitter.js'
 import { isValidProp } from './utils/IsValidProp.js'
 import { loadState } from './utils/Store.js'
@@ -16,6 +17,9 @@ class ObservableAppState extends EventEmitter {
 
   /**@type {Quote | null} */
   dailyQuote = null
+
+  /**@type {Weather | null} */
+  dailyWeather = null
 
   page = ''
   user = null
