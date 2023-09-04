@@ -4,6 +4,7 @@ import { Pop } from "../utils/Pop.js"
 import { setHTML } from "../utils/Writer.js"
 
 function _drawWeather() {
+    debugger
     let dailyWeather = AppState.dailyWeather
     setHTML('weather', dailyWeather.weatherTemplate)
 }

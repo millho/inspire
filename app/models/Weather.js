@@ -10,7 +10,6 @@ export class Weather {
 
     get weatherTemplate() {
         return /*HTML*/`
-        <h5>${this.temperature}</h5>
-        `
+        <h5>${this.temperature}</h5>`
     }
 }

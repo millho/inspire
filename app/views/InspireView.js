@@ -22,7 +22,6 @@ export const InspireView = /*HTML*/`
         <div>
 
         <div class="col-4" id="weather">
-        
         </div>
     </section>
 </div>

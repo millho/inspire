@@ -11,7 +11,7 @@ function _drawQuote() {
 export class QuoteController {
     constructor() {
         AppState.on('account', this.getQuote)
-        AppState.on('dailyImage', _drawQuote)
+        AppState.on('dailyQuote', _drawQuote)
     }
 
     async getQuote() {

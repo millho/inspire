@@ -15,7 +15,7 @@ import { InspireView } from "./views/InspireView.js";
 export const router = [
   {
     path: '',
-    controller: [TodoController, ImageController, QuoteController, WeatherController],
+    controller: [TodoController, ImageController, QuoteController, WeatherController,],
     view: InspireView
   },
   {
