@@ -6,6 +6,14 @@ import { Todo } from "../models/Todo.js";
 export const InspireView = /*HTML*/`
 <div class="container-fluid p-3">
     <section class="row">
+        <div class="col-2 text-light">
+            <h1 id="clock">
+            </h1>
+        </div>
+        <div class="col-2 text-light" id="weather">
+        </div>
+    </section>
+    <section class="row">
         <div class="col-4">
             <form class="" onsubmit="app.TodoController.createTodo()">
                 <div class="mb-3 blurred">
@@ -17,18 +25,9 @@ export const InspireView = /*HTML*/`
             </div>
             <div class="blurred" id="todo-list">
             </div>
-        </div>
-
+        </div>    
         <div class="col-4 text-light" id="quote">
-        <div>
-
-        <div class="col-2 text-light">
-            <h1 id="clock">
-            </h1>
-        </div>
-
-        <div class="col-2 text-light" id="weather">
-        </div>
+        </div>      
     </section>
 </div>
 `

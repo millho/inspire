@@ -3,8 +3,7 @@ import { setHTML } from "../utils/Writer.js";
 
 function _drawTime() {
     let time = AppState.time
-    // setHTML('clock', time)
-    console.log(time);
+    setHTML('clock', time)
 }
 
 export class ClockController {
@@ -19,8 +18,7 @@ export class ClockController {
         let minutes = today.getMinutes()
         if (hours > 12) {
             hours -= 12;
-        }
+        } else { }
         AppState.time = hours + ':' + minutes
-        // AppState.time = today
     }
 }

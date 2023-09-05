@@ -10,7 +10,8 @@ class WeatherService {
     }
 
     switchTemp() {
-        console.log('switching temp');
+        AppState.dailyWeather.celsius = !AppState.dailyWeather.celsius
+        AppState.emit('dailyWeather')
     }
 }
 

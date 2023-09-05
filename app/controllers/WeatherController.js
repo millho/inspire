@@ -5,9 +5,7 @@ import { setHTML } from "../utils/Writer.js"
 
 function _drawWeather() {
     let dailyWeather = AppState.dailyWeather
-    // setHTML('weather', dailyWeather.weatherTemplate)
-    // document.getElementById('weather')
-    console.log(dailyWeather.weatherTemplate);
+    setHTML('weather', dailyWeather.weatherTemplate)
 }
 
 export class WeatherController {
@@ -23,11 +21,7 @@ export class WeatherController {
         }
     }
 
-    async switchTemp() {
-        try {
-            await weatherService.switchTemp()
-        } catch (error) {
-            Pop.error(error)
-        }
+    switchTemp() {
+        weatherService.switchTemp()
     }
 }
