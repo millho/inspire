@@ -14,10 +14,10 @@ import { InspireView } from "./views/InspireView.js";
  * @type {Route[]}
  */
 export const router = [
-  {
-    path: '',
-    controller: [TodoController, ImageController, QuoteController, WeatherController, ClockController],
-    view: `
+    {
+        path: '',
+        controller: [TodoController, ImageController, QuoteController, WeatherController, ClockController],
+        view: `
 <div class="container-fluid p-3">
     <section class="row justify-content-between">
         <div class="col-2 mb-3 ms-3 text-center blurred rounded elevation-5 text-light">
@@ -44,12 +44,12 @@ export const router = [
         </div>          
     </section>
 </div>`
-  },
-  {
-    path: '#/about',
-    controller: [AboutController, ValuesController],
-    view: AboutView
-  }
+    },
+    {
+        path: '#/about',
+        controller: [AboutController, ValuesController],
+        view: AboutView
+    }
 ]
 
 
